@@ -47,9 +47,28 @@ const users = [
 ]
 
 users[1].email
-console.log(tinderUser);
-console.log(Object.keys(tinderUser));  // Object.keys = Returns array of property names (keys) here keys are id , name , isLoggedIn
-console.log(Object.values(tinderUser)); // gives 123abc , sammy, false in an array
-console.log(Object.entries(tinderUser)); 
+// console.log(tinderUser);
+// console.log(Object.keys(tinderUser));  // Object.keys = Returns array of property names (keys) here keys are id , name , isLoggedIn
+// console.log(Object.values(tinderUser)); // gives 123abc , sammy, false in an array
+// console.log(Object.entries(tinderUser)); 
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));  // check it has isLoggedIn property exist or not
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));  // check it has isLoggedIn property exist or not
+
+
+const course = {
+    coursename: "JS",
+    price: "999",
+    courseInstructor: "hitesh"
+}
+
+// console.log(course.courseInstructor);
+
+const {courseInstructor: instructor} = course // destructuring of courseinstructor
+console.log(instructor); 
+
+
+// {
+//     "name": "piyush",
+//     "coursename": " JS",            JSON
+//     "price": "free"
+// }
