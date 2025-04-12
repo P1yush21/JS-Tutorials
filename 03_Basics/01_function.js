@@ -29,7 +29,7 @@ const result = addTwoNumbers(3, 5)
 
 function loginUserMessage(username = "sam"){
     if(!username){
-        console.log("PLease enter a username");
+        console.log("Please enter a username");
         return
     }
     return `${username} just logged in`
@@ -37,3 +37,32 @@ function loginUserMessage(username = "sam"){
 
 // console.log(loginUserMessage("hitesh"))
 // console.log(loginUserMessage("hitesh"))
+
+function calculateCartPrice(val1, val2, ...num1){
+    return num1
+} 
+// onsole.log(calculateCartPrice(200, 400, 500, 800, 900));
+// val1 and val2 takes starting arguments and the rest is in ...num1
+
+
+const user = {
+    username: "piyush",
+    price: 200
+}
+
+function handleObject(anyobject){
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
+}
+// handleObject(user)
+handleObject({
+    username: "Sam",
+    price: 388
+})
+
+
+const myNewArray = [ 500, 800, 900 ]
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+// console.log(returnSecondValue(myNewArray))
+console.log(returnSecondValue([ 500, 800, 900 ]))
